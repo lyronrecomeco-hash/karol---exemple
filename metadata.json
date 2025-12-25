@@ -1,0 +1,7 @@
+{
+  "name": "Karol Vaquinhas",
+  "description": "Uma plataforma mobile-first moderna de vaquinhas e sorteios individuais com design dark e pagamentos simulados.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
