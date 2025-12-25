@@ -6,17 +6,17 @@ const WinnersView: React.FC = () => {
   return (
     <div className="p-6 md:p-10 space-y-12 min-h-screen pb-32">
       <div className="space-y-3">
-        <h2 className="text-3xl font-black text-white italic tracking-tighter">HALL DA <span className="text-cyan-400">FAMA</span></h2>
+        <h2 className="text-3xl font-black text-white italic tracking-tighter uppercase">Hall da <span className="text-cyan-400">Fama</span></h2>
         <div className="flex items-center space-x-2">
           <span className="w-10 h-1 bg-cyan-500 rounded-full" />
-          <p className="text-gray-500 text-[10px] font-black uppercase tracking-[0.25em]">Sorteados por Karol - Vaquinha</p>
+          <p className="text-gray-500 text-[10px] font-black uppercase tracking-[0.25em]">Ganhadores Reais - Karol Vaquinha</p>
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {MOCK_WINNERS.map((w) => (
           <div key={w.position} className="relative group">
-            {/* Badge de Posição Elevada */}
+            {/* Badge de Posição Premium */}
             <div className={`absolute -top-4 -left-3 z-20 w-12 h-12 rounded-[1.2rem] flex items-center justify-center font-black text-xl shadow-2xl border-2 border-white/10 ${
               w.position === 1 ? 'bg-gradient-to-br from-yellow-400 to-orange-600 text-white' :
               w.position === 2 ? 'bg-gradient-to-br from-slate-300 to-slate-500 text-white' :
@@ -34,7 +34,7 @@ const WinnersView: React.FC = () => {
                 
                 <div className="flex-1 space-y-3">
                   <div className="flex justify-between items-start">
-                    <h3 className="font-black text-white text-lg tracking-tight leading-none">{w.name}</h3>
+                    <h3 className="font-black text-white text-lg tracking-tight leading-none uppercase">{w.name}</h3>
                     <span className="text-[9px] text-gray-600 font-bold uppercase tracking-widest">{w.date}</span>
                   </div>
                   
@@ -43,7 +43,7 @@ const WinnersView: React.FC = () => {
                       <p className="text-[10px] text-cyan-400 font-black uppercase tracking-widest">{w.prize}</p>
                     </div>
                     <div className="flex items-center space-x-2 pt-1">
-                      <span className="text-[9px] text-gray-500 font-black uppercase tracking-tighter">Bilhete Premiado:</span>
+                      <span className="text-[9px] text-gray-500 font-black uppercase tracking-tighter">Cota Sorteada:</span>
                       <span className="px-3 py-1 bg-white/5 rounded-lg text-xs font-mono font-black text-white border border-white/5 group-hover:border-cyan-500/20">{w.number}</span>
                     </div>
                   </div>
@@ -61,9 +61,9 @@ const WinnersView: React.FC = () => {
           </svg>
         </div>
         <div className="space-y-3">
-          <h4 className="font-black text-white text-xl italic tracking-tighter">TRANSPARÊNCIA E FÉ</h4>
+          <h4 className="font-black text-white text-xl italic tracking-tighter uppercase">Transparência e Fé</h4>
           <p className="text-sm text-gray-500 leading-relaxed max-w-lg mx-auto font-medium">
-            Todos os nossos ganhadores são reais e os sorteios realizados com base na Loteria Federal. Sua segurança é nossa prioridade número um.
+            Sorteios baseados na Loteria Federal. Sua segurança é nossa prioridade número um em cada edição.
           </p>
         </div>
       </div>
